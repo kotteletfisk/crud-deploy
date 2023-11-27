@@ -4,7 +4,7 @@ import { fetchAny } from "../apiFacade";
 const CarsTable = () => {
   useEffect(() => {
     fetchAny(
-      "http://46.101.183.184:3005/api/v1/cars/zdf",
+      "http://46.101.183.184:3005/api/v1/cars",
       (data) => {
         setCars(data.cars);
       },
